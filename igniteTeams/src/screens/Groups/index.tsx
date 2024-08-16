@@ -5,7 +5,6 @@ export default function Groups() {
   return (
     <View style={styles.container}>
       <Text>Groups</Text>
-     
     </View>
   );
 }
