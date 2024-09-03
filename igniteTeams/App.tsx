@@ -1,5 +1,4 @@
-import Groups from '@screens/Groups';
-import { NewGroup } from '@screens/Groups/NewGroup';
+
 import {ThemeProvider} from 'styled-components'
 import theme from './src/themes/'
 import {
@@ -9,6 +8,7 @@ import {
 } from '@expo-google-fonts/roboto'
 import { Loading } from '@components/Loading';
 import { StatusBar } from 'react-native';
+import { Players } from '@screens/Players';
 
 export default function App() {
 
@@ -23,7 +23,7 @@ export default function App() {
       backgroundColor="transparent"
       translucent
     />
-      { fontsLoaded ? <NewGroup /> : <Loading/> }
+      { fontsLoaded ? <Players/> : <Loading/> }
    </ThemeProvider>
   );
 }
