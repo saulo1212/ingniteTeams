@@ -9,12 +9,7 @@ import { Button } from '@components/Button'
 
 export default function Groups() {
 
-  const [groups,setGroups] = useState<string[]>(
-    [
-      'Grupo de Teste', 
-      'Grupo de teste 2'
-    ]
-)
+  const [groups,setGroups] = useState<string[]>( [])
 
   return (
     <Container >
@@ -37,7 +32,9 @@ export default function Groups() {
         ListEmptyComponent={() => <ListEmpty message='Cadastre uma turma' />}
       />
 
-      <Button title='Cria nova turma' />
+      <Button 
+        title='Cria nova turma'
+      />
 
     </Container>
   );
